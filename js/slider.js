@@ -34,12 +34,12 @@ $(document).ready(function(){
     if(navNum === (unitQuant - 1)){
       navNum = 0;
       slidePos = navNum * unitWidth;  
-      $('#slide_block').animate({right:slidePos}, 10);
+      $('#slide_block').animate({right:slidePos}, 20);
     }
     else{
       navNum ++
       slidePos = navNum * unitWidth;
-      $('#slide_block').animate({right:slidePos}, 400);
+      $('#slide_block').animate({right:slidePos}, 300);
    }
     $('#slide_nav li').removeClass('selected').removeClass('hover');
     $('#slide_nav li').eq(navNum).addClass('selected');
@@ -49,15 +49,16 @@ $(document).ready(function(){
     if(navNum === 0){
       navNum = (unitQuant - 1);
       slidePos = navNum * unitWidth;  
-      $('#slide_block').animate({right:slidePos}, 10);
+      $('#slide_block').animate({right:slidePos}, 20);
     }
     else{
       navNum --
       slidePos = navNum * unitWidth;
-      $('#slide_block').animate({right:slidePos}, 400);
+      $('#slide_block').animate({right:slidePos}, 300);
    }
     $('#slide_nav li').removeClass('selected').removeClass('hover');
     $('#slide_nav li').eq(navNum).addClass('selected');
   });
+
 
 });
