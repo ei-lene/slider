@@ -40,6 +40,10 @@ h1 {
 	background:rgba(255,0,0,.5);
 }
 
+.hover { /* styles the currently selected nav item */
+	background:rgba(51,51,51,.5);
+}
+
 /*========= slider container parts ========*/
 
 #slide_frame { /* the frame window that hides all content outside the slider frame */
